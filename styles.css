@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.dashboard-container {
+    border: 2px solid black;
+
+    width: 80%;
+    height: 100%;
+    margin:30px auto ;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.dashboard-container h1 {
+    text-align: center;
+}
+.p1{
+    border: 2px solid black;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 10px;
+    margin: 20px;
+}
+.p1 a , .p1 ul li{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 5px;
+}
+.p1 h2{
+    font-size: 18px;
+} */
+
+
+   /* Style pour le sidebar menu */
+   .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #007bff;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 8px;
+    color: #32324f;
+
+}
+.sidebar .title{
+    /* text-decoration: underline; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s ease;
+
+}
+
+.sidebar ul li a:hover {
+    background-color: #0056b3;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 8px;
+}
+
+.content {
+    margin-left: 257px; /* Ajustez selon la largeur du sidebar et les marges */
+    padding: 0px;
+}
+.app-title {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 10px 15px;
+    color: #007bff;
+}
+
+.app-title i {
+    margin-right: 10px;
+    font-size: 24px; /* Taille de l'icône */
+    animation: rotateIcon 2s linear infinite; /* Animation infinie */
+}
+
+@keyframes rotateIcon {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Style pour le contenu principal */
+.dashboard-container {
+    background-color: #f0f8ff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    /* height: 100vh; */
+}
+
+/* .container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+
+.heading {
+    text-align: center;
+    /* margin-bottom: 20px; */
+    padding: 20px;
+    color: #007bff;
+}
+
+.form {
+    margin-bottom: 20px;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.input-text {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 16px;
+    width: 34%;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.success-message {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.btn-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.table {
+    width: 92%;
+    border-collapse: collapse;
+    margin: 20px 20px;
+}
+
+.table th,
+.table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tr:hover {
+    background-color: #ddd;
+}
+
+.text-danger {
+    color: red;
+    font-weight: bold;
+}
+
+.text-success {
+    color: #28a745;
+    font-weight: bold;
+}
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 87px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+.login-form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.input-text {
+    width: 60%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 15px;
+    }
+}
+.employee-list li{
+    margin-left: 41px;
+    list-style: square;
+}
+
+/* #dailyAbsenceChart , #monthlyAbsenceChart{
+width: 100px;
+height: 100px;
+} */
+.chart-container canvas {
+    width: 200px !important;
+    height: 200px !important;
+}
+.box{
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-around;
+}
+.chart-container {
+    text-align: center;
+    margin: 20px;
+}
+.percentage-label {
+    width: 222px;
+    display: flex;
+    margin-top: 10px;
+    font-size: 18px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.table-container {
+    margin: 20px;
+    text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+.status-present {
+    color: green;
+}
+.status-absent {
+    color: red;
+}
