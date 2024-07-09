@@ -47,11 +47,11 @@ $conn->close();
         <h2>Connexion</h2>
         <form action="login.php" method="POST" class="login-form">
             <div class="form-group">
-                <label for="username">Nom d'utilisateur :</label>
+                <label for="username">Nom d'utilisateur :</label><br>
                 <input type="text" id="username" name="username" required class="input-text">
             </div>
             <div class="form-group">
-                <label for="password">Mot de passe :</label>
+                <label for="password">Mot de passe :</label><br>
                 <input type="password" id="password" name="password" required class="input-text">
             </div>
             <button type="submit" class="btn-primary">Se connecter</button>
